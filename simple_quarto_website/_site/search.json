@@ -1,0 +1,121 @@
+[
+  {
+    "objectID": "slides/slides.html",
+    "href": "slides/slides.html",
+    "title": "欢迎来到数据科学世界",
+    "section": "",
+    "text": "数据科学是一个跨学科领域,结合了统计学、计算机科学和领域专业知识。"
+  },
+  {
+    "objectID": "slides/slides.html#数据科学的核心组成",
+    "href": "slides/slides.html#数据科学的核心组成",
+    "title": "欢迎来到数据科学世界",
+    "section": "数据科学的核心组成",
+    "text": "数据科学的核心组成\n\n统计学\n编程\n领域知识\n数据可视化\n机器学习"
+  },
+  {
+    "objectID": "slides/slides.html#python在数据科学中的应用",
+    "href": "slides/slides.html#python在数据科学中的应用",
+    "title": "欢迎来到数据科学世界",
+    "section": "Python在数据科学中的应用",
+    "text": "Python在数据科学中的应用\nPython是数据科学中最流行的编程语言之一 [@mckinney2012python]。\n以下是一个简单的数据可视化示例:\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom sklearn.linear_model import LinearRegression\n\n# 生成示例数据\nnp.random.seed(0)\nX = np.linspace(0, 10, 100).reshape(-1, 1)\ny = 2 * X + 1 + np.random.randn(100, 1)\n\n# 拟合线性回归模型\nmodel = LinearRegression()\nmodel.fit(X, y)\n\n# 绘制数据点和拟合线\nplt.figure(figsize=(10, 6))\nplt.scatter(X, y, color='blue', label='数据点')\nplt.plot(X, model.predict(X), color='red', label='拟合线')\nplt.xlabel('X')\nplt.ylabel('Y')\nplt.legend()\nplt.title('简单的线性回归示例')\nplt.show()\n\n\nc:\\Users\\may\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\IPython\\core\\pylabtools.py:170: UserWarning: Glyph 31616 (\\N{CJK UNIFIED IDEOGRAPH-7B80}) missing from font(s) DejaVu Sans.\n  fig.canvas.print_figure(bytes_io, **kw)\nc:\\Users\\may\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\IPython\\core\\pylabtools.py:170: UserWarning: Glyph 21333 (\\N{CJK UNIFIED IDEOGRAPH-5355}) missing from font(s) DejaVu Sans.\n  fig.canvas.print_figure(bytes_io, **kw)\nc:\\Users\\may\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\IPython\\core\\pylabtools.py:170: UserWarning: Glyph 30340 (\\N{CJK UNIFIED IDEOGRAPH-7684}) missing from font(s) DejaVu Sans.\n  fig.canvas.print_figure(bytes_io, **kw)\nc:\\Users\\may\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\IPython\\core\\pylabtools.py:170: UserWarning: Glyph 32447 (\\N{CJK UNIFIED IDEOGRAPH-7EBF}) missing from font(s) DejaVu Sans.\n  fig.canvas.print_figure(bytes_io, **kw)\nc:\\Users\\may\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\IPython\\core\\pylabtools.py:170: UserWarning: Glyph 24615 (\\N{CJK UNIFIED IDEOGRAPH-6027}) missing from font(s) DejaVu Sans.\n  fig.canvas.print_figure(bytes_io, **kw)\nc:\\Users\\may\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\IPython\\core\\pylabtools.py:170: UserWarning: Glyph 22238 (\\N{CJK UNIFIED IDEOGRAPH-56DE}) missing from font(s) DejaVu Sans.\n  fig.canvas.print_figure(bytes_io, **kw)\nc:\\Users\\may\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\IPython\\core\\pylabtools.py:170: UserWarning: Glyph 24402 (\\N{CJK UNIFIED IDEOGRAPH-5F52}) missing from font(s) DejaVu Sans.\n  fig.canvas.print_figure(bytes_io, **kw)\nc:\\Users\\may\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\IPython\\core\\pylabtools.py:170: UserWarning: Glyph 31034 (\\N{CJK UNIFIED IDEOGRAPH-793A}) missing from font(s) DejaVu Sans.\n  fig.canvas.print_figure(bytes_io, **kw)\nc:\\Users\\may\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\IPython\\core\\pylabtools.py:170: UserWarning: Glyph 20363 (\\N{CJK UNIFIED IDEOGRAPH-4F8B}) missing from font(s) DejaVu Sans.\n  fig.canvas.print_figure(bytes_io, **kw)\nc:\\Users\\may\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\IPython\\core\\pylabtools.py:170: UserWarning: Glyph 25968 (\\N{CJK UNIFIED IDEOGRAPH-6570}) missing from font(s) DejaVu Sans.\n  fig.canvas.print_figure(bytes_io, **kw)\nc:\\Users\\may\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\IPython\\core\\pylabtools.py:170: UserWarning: Glyph 25454 (\\N{CJK UNIFIED IDEOGRAPH-636E}) missing from font(s) DejaVu Sans.\n  fig.canvas.print_figure(bytes_io, **kw)\nc:\\Users\\may\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\IPython\\core\\pylabtools.py:170: UserWarning: Glyph 28857 (\\N{CJK UNIFIED IDEOGRAPH-70B9}) missing from font(s) DejaVu Sans.\n  fig.canvas.print_figure(bytes_io, **kw)\nc:\\Users\\may\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\IPython\\core\\pylabtools.py:170: UserWarning: Glyph 25311 (\\N{CJK UNIFIED IDEOGRAPH-62DF}) missing from font(s) DejaVu Sans.\n  fig.canvas.print_figure(bytes_io, **kw)\nc:\\Users\\may\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\IPython\\core\\pylabtools.py:170: UserWarning: Glyph 21512 (\\N{CJK UNIFIED IDEOGRAPH-5408}) missing from font(s) DejaVu Sans.\n  fig.canvas.print_figure(bytes_io, **kw)"
+  },
+  {
+    "objectID": "slides/slides.html#数据科学的未来",
+    "href": "slides/slides.html#数据科学的未来",
+    "title": "欢迎来到数据科学世界",
+    "section": "数据科学的未来",
+    "text": "数据科学的未来\n数据科学正在快速发展,影响着各个行业。\n\n\n\n数据科学趋势\n\n\n未来的关键领域包括:\n\n人工智能和深度学习\n大数据处理\n边缘计算\n可解释AI"
+  },
+  {
+    "objectID": "slides/slides.html#参考文献",
+    "href": "slides/slides.html#参考文献",
+    "title": "欢迎来到数据科学世界",
+    "section": "参考文献",
+    "text": "参考文献"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "示例文档",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "index.html#项目符号列表",
+    "href": "index.html#项目符号列表",
+    "title": "示例文档",
+    "section": "项目符号列表",
+    "text": "项目符号列表\n\n第一项\n第二项\n第三项"
+  },
+  {
+    "objectID": "index.html#两列格式化文本",
+    "href": "index.html#两列格式化文本",
+    "title": "示例文档",
+    "section": "两列格式化文本",
+    "text": "两列格式化文本\n\n\n第一列\nSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.\n\n第二列\nNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+  },
+  {
+    "objectID": "index.html#markdown-表格",
+    "href": "index.html#markdown-表格",
+    "title": "示例文档",
+    "section": "Markdown 表格",
+    "text": "Markdown 表格\n\n\n\n列1\n列2\n列3\n\n\n\n\n内容A\n内容B\n内容C\n\n\n内容D\n内容E\n内容F"
+  },
+  {
+    "objectID": "index.html#内联数学latex公式",
+    "href": "index.html#内联数学latex公式",
+    "title": "示例文档",
+    "section": "内联数学LaTeX公式",
+    "text": "内联数学LaTeX公式\n这是一个内联公式：\\(E = mc^2\\)"
+  },
+  {
+    "objectID": "index.html#非内联数学latex公式",
+    "href": "index.html#非内联数学latex公式",
+    "title": "示例文档",
+    "section": "非内联数学LaTeX公式",
+    "text": "非内联数学LaTeX公式\n这是一个非内联公式： \\[\n\\int_{-\\infty}^\\infty e^{-x^2}\\,dx = \\sqrt{\\pi}\n\\]"
+  },
+  {
+    "objectID": "index.html#脚注",
+    "href": "index.html#脚注",
+    "title": "示例文档",
+    "section": "脚注",
+    "text": "脚注\n这是一个脚注的示例[^1]。"
+  },
+  {
+    "objectID": "index.html#引用",
+    "href": "index.html#引用",
+    "title": "示例文档",
+    "section": "引用",
+    "text": "引用\n\n“真正的知识存在于理解之中。” —— Isaac Asimov"
+  },
+  {
+    "objectID": "index.html#嵌入式图像",
+    "href": "index.html#嵌入式图像",
+    "title": "示例文档",
+    "section": "嵌入式图像",
+    "text": "嵌入式图像\n\n\n\n这是描述"
+  },
+  {
+    "objectID": "index.html#嵌入式视频",
+    "href": "index.html#嵌入式视频",
+    "title": "示例文档",
+    "section": "嵌入式视频",
+    "text": "嵌入式视频"
+  },
+  {
+    "objectID": "index.html#mermaid-图表",
+    "href": "index.html#mermaid-图表",
+    "title": "示例文档",
+    "section": "Mermaid 图表",
+    "text": "Mermaid 图表\ngraph TD;\n    A[开始] --&gt; B(选择);\n    B --&gt;|选择1| C[结果1];\n    B --&gt;|选择2| D[结果2];"
+  }
+]

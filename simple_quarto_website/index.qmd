@@ -1,0 +1,88 @@
+---
+title: "simple_quarto_website"
+---
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+---
+title: "示例文档"
+author: "作者名"
+date: "`r Sys.Date()`"
+format: 
+  html:
+    toc: true # 显示目录
+bibliography: reference.bib # 引用.bib文件
+
+---
+
+# 欢迎来到示例文档
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+## 项目符号列表
+
+- 第一项
+- 第二项
+- 第三项
+
+## 两列格式化文本
+
+::: {.columns}
+::: {.column width="50%"}
+**第一列**
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+::: 
+:::  {.column width="50%"}
+**第二列**
+
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+:::
+:::
+
+## Markdown 表格
+
+| 列1   | 列2   | 列3   |
+| ----- | ----- | ----- |
+| 内容A | 内容B | 内容C |
+| 内容D | 内容E | 内容F |
+
+## 内联数学LaTeX公式
+
+这是一个内联公式：$E = mc^2$
+
+## 非内联数学LaTeX公式
+
+这是一个非内联公式：
+$$
+\int_{-\infty}^\infty e^{-x^2}\,dx = \sqrt{\pi}
+$$
+
+## 脚注
+
+这是一个脚注的示例[^1]。
+
+## 引用
+
+> “真正的知识存在于理解之中。” —— Isaac Asimov
+
+## 嵌入式图像
+
+![这是描述](https://markdown.com.cn/assets/img/notepad.3541bd12.png)  
+
+## 嵌入式视频
+
+# Video Section
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7VM7QPl9x6o?si=B-ZuHYSqkA6R8mrW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Mermaid 图表
+
+```mermaid
+graph TD;
+    A[开始] --> B(选择);
+    B -->|选择1| C[结果1];
+    B -->|选择2| D[结果2];
+```
